@@ -1,0 +1,84 @@
+
+/*
+'**********************************************************************************************
+'SQL Scripts Table, Procedure and View
+'**********************************************************************************************
+*/
+
+
+/*
+'MEREUC_RW is the Username
+'IPEXUNITS is the Table Name
+'IpexUnits_ins is the Procedure Name
+*/
+
+
+/*
+'**********************************************************************************************
+'SQL Table
+'**********************************************************************************************
+*/
+
+
+CREATE TABLE MEREUC_RW.IPEXUNITS
+(
+  Day     DATE NOT NULL,
+  ORA     NUMBER(2) NOT NULL,
+  UNITA   VARCHAR2(200) NOT NULL,
+  MERCATO VARCHAR2(200) NOT NULL,
+  MWHACC Number(6, 3)
+)
+/
+
+
+/*
+'**********************************************************************************************
+'SQL Procedure
+'**********************************************************************************************
+*/
+
+
+CREATE OR REPLACE
+PROCEDURE  IpexUnits_ins ( DataP date,oraP Number,UnitaP varchar2,MercatoP varchar2,MwhaccP Number )
+as
+
+howmanyrec NUMBER;
+giorno  date;
+
+BEGIN
+
+Select count(*) into howmanyrec from IpexUnits F
+ where F."Day" = DataP  and f.unita = UnitaP and f.mercato = MercatoP  and f.ora = oraP;
+ 
+ If howmanyrec = 0 Then
+    Insert into IpexUnits ("Day",Ora,Unita,Mercato,MWhAcc)
+    Values(DataP,OraP,UnitaP,MercatoP,nvl(MwhaccP,0));
+End if;
+commit;
+
+If howmanyrec = 1 Then
+  Update IpexUnits F Set F.MWhAcc= nvl(MWhaccP,0)
+  Where F."Day" = DataP and F.Unita = UnitaP and F.Mercato=MercatoP  and f.ora = oraP;
+End if;
+
+commit;
+
+end;
+/
+
+
+/*
+'**********************************************************************************************
+'SQL View... If one wants to create with some filtering
+'**********************************************************************************************
+*/
+
+
+SELECT IU."Day",
+TO_CHAR(TO_DATE(IU."Day",'YYYY-MM-DD'),'Q') AS Q, IU.ORA, IU.UNITA, IU.MERCATO, IU.MWHACC
+FROM MEREUC_RW.IPEXUNITS IU
+WHERE
+IU."Day">=trunc(sysdate-6) --or IU."Day"=to_date('230817','DDMMYY') for a single date
+
+
+--'Note: Q is the Quarter. There are four quarters on a year
