@@ -3,7 +3,9 @@ Attribute VB_Name = "GH_ExcelTable_Filt_CopyPaste"
 Option Explicit
 Option Base 1
 
-'Tried in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 '******************************************************************
 'Example of an Excel Table Filtering, Copying and Paste values
