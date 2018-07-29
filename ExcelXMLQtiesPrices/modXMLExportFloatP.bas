@@ -3,6 +3,8 @@ Option Explicit
 Option Compare Text
 Option Base 1
 
+'Used Microsoft XML v3.0 library
+
 Sub CreateXMLFloatsP() 'XML Export (i.e. File Creation) of Prices... Values have two decimal values as default
 
 Dim xmlDoc As DOMDocument, objIntro As IXMLDOMProcessingInstruction

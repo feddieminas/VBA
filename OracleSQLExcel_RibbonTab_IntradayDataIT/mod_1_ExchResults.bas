@@ -1,5 +1,11 @@
 Attribute VB_Name = "mod_1_ExchResults"
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 Option Explicit
+
+'Used Microsoft ActiveX Data Objects 2.8 library
 
 Sub GetDatafromExchITSpot() 'Retrieves data from the IPEX xlsx file you downloaded from the Exchange and saved on a folder of your choice. Default is C:\
 

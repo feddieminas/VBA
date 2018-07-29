@@ -1,7 +1,27 @@
 Attribute VB_Name = "modFunctions"
+
+#If Mac Then
+
+#If VBA7 Then
+Declare PtrSafe Function CloseClipboard Lib "user32" () As LongPtr
+Declare PtrSafe Function EmptyClipboard Lib "user32" () As LongPtr
+Declare PtrSafe Function OpenClipboard Lib "user32" (ByVal hwnd As Long) As LongPtr
+#Else
 Declare Function CloseClipboard Lib "user32" () As Long
 Declare Function EmptyClipboard Lib "user32" () As Long
 Declare Function OpenClipboard Lib "user32" (ByVal hwnd As Long) As Long
+#End If
+
+#ElseIf VBA7 Then
+Declare PtrSafe Function CloseClipboard Lib "user32" () As Long
+Declare PtrSafe Function EmptyClipboard Lib "user32" () As Long
+Declare PtrSafe Function OpenClipboard Lib "user32" (ByVal hwnd As Long) As Long
+#Else
+Declare Function CloseClipboard Lib "user32" () As Long
+Declare Function EmptyClipboard Lib "user32" () As Long
+Declare Function OpenClipboard Lib "user32" (ByVal hwnd As Long) As Long
+#End If
+
 
 Function isworkbookopen(ByRef checkbook As String)
 

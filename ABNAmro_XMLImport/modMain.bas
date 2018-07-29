@@ -1,6 +1,8 @@
 Attribute VB_Name = "modMain"
 
-'Worked on Excel 2007
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 'Need to download 7Zip
 'Need to create manually a directory to insert your zip file ABN Amro Clearing - Sample XML files.zip

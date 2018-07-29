@@ -2,7 +2,9 @@ Attribute VB_Name = "GH_ADOExcel"
 Option Explicit
 Option Base 1
 
-'Tried in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 '****************************************
 'ADO ID RETRIEVE, UPDATE, INSERT, DELETE

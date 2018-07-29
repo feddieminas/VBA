@@ -3,6 +3,8 @@ Option Explicit
 Option Base 1
 Option Compare Text
 
+'Used the Microsoft XML v6.0 library
+
 'SubMacro can do
 'Delete Sheets
 'insertSheets

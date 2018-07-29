@@ -1,6 +1,10 @@
 Attribute VB_Name = "MySettings"
 Option Explicit
 
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 '''INSTRUCTIONS
 
 '''1) Add VBA Library reference :

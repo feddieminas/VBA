@@ -1,8 +1,10 @@
 Attribute VB_Name = "GH_ADOAccess"
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 Option Explicit
 Option Base 1
-
-'Tried in Windows 7 and Excel 2007, 2010
 
 '**************************************************************
 'ADO Microsoft Access TABLE DELETE, INSERT, UPDATE, RETRIEVE

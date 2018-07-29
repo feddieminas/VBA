@@ -8,12 +8,24 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
 
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 '*****************
 'MK_Data.xlsm
 
 'If one wants to make modifications for the excel add-inn (MK_Data.xlam),
 'he/she can make them on this xlsm file and later save a copy of it as an xlam file.
 '*****************
+
+'Libraries Used :
+'Visual Basic for Applications
+'Microsoft Excel 15.0 Object Library
+'OLE Automation
+'Microsoft Office 15.0 Object Library
+'Microsoft ActiveX Data Objects 2.8 Library
+'Microsoft Forms 2.0 Object Library
 
 Private Sub Workbook_BeforeClose(Cancel As Boolean) 'Actual, Forecast Ops, Forecast Ops Shift
 On Error Resume Next

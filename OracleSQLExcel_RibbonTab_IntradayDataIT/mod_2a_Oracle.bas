@@ -6,6 +6,9 @@ Option Explicit
 
 'MI is the Intraday Market Exchange of the Power Market in Italy
 
+'Used the Oracle InProc Server 5.0 Type Library on C:\Oracle\Ora92\product\11.2.0\client_1\bin\oip11.tlb. Need to import your Oracle version lib
+'as one might have a different version. On the VBA editor, one can do it through Tab Tools-->References-->Browse for the library or select from the list
+
 Sub MIBordersTable()
 
 Dim arethererows As Long, OracleStartRow As Long, DatabaseLastRow As Long, DatabaseListRows As Long, anno As Long
@@ -80,7 +83,7 @@ mynext:
         DatabaseLastRow = .Cells(.Rows.count, "A").End(xlUp).Row
         
        On Error GoTo continue
-       Application.Goto Reference:=.Range("A2")
+       Application.GoTo Reference:=.Range("A2")
        
          .ListObjects.Add(xlSrcRange, Range("$A$1:$E$" & DatabaseLastRow), , xlYes).Name = _
         "MIListDtbs"
@@ -202,7 +205,7 @@ fine:
   Set Rng = Nothing
   Set My_Table = Nothing
   
-Application.Goto Reference:=ThisWorkbook.Worksheets("Oracle").Range("C6")
+Application.GoTo Reference:=ThisWorkbook.Worksheets("Oracle").Range("C6")
 
 Application.ScreenUpdating = True
 

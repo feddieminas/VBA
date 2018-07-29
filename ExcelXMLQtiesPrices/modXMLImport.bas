@@ -1,4 +1,8 @@
 Attribute VB_Name = "modXMLImport"
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 Option Explicit
 Option Compare Text
 Option Base 1

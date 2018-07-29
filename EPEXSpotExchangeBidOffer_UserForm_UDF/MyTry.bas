@@ -1,6 +1,10 @@
 Attribute VB_Name = "MyTry"
 Option Explicit
 
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 '***********************************
 'EPEX_PowerBidOffer_Template.xlsm
 '***********************************

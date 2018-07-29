@@ -8,9 +8,11 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
 
-'Create Aggregate Curves for the Iberia Power Market
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-'File created on Excel 2007 with a Ribbon Tab
+'Create Aggregate Curves for the Iberia Power Market
 
 Private Sub Workbook_Open()
 Exit Sub 'to avoid going the file in automatic whilst Open. Can use the ribbon button

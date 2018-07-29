@@ -2,7 +2,9 @@ Attribute VB_Name = "GH_ADOExcel_NewWBWS"
 Option Explicit
 Option Base 1
 
-'Tried in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'Worked the project in Windows 7 and Excel 2007, 2010
+'""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 '******************************************************************
 'Example of an Excel Database Creation with Closed Workbooks
